@@ -2,7 +2,6 @@ import asyncio
 import aiohttp
 from bs4 import BeautifulSoup
 import csv
-
 async def scrape_quotes():
     async with aiohttp.ClientSession() as session:
         async with session.get("http://quotes.toscrape.com") as response:
